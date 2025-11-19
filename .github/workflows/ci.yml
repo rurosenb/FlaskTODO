@@ -9,5 +9,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-        name: Print message on push
+      - name: Print message on push
         run: echo "Push detected! CI is working."
+
