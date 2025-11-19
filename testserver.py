@@ -2,7 +2,7 @@ import requests
 import sys
 import time
 
-FLASK_URL = "http://flask_app:5000/add"
+FLASK_URL = "http://app:5000/add"
 DATA = {"title": "Buy groceries"}
 MAX_RETRIES = 10
 WAIT_SECONDS = 3
