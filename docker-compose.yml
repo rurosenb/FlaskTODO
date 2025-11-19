@@ -47,8 +47,8 @@ services:
     restart: unless-stopped
     build:
       context: .
-      command: ["pytest", "-q"]
       dockerfile: test.Dockerfile
+    command: ["pytest", "-q"]
     links:
       # network connection with these services
       - app
