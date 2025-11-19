@@ -1,0 +1,13 @@
+name: Simple CI
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  print_message:
+    runs-on: ubuntu-latest
+
+    steps:
+        name: Print message on push
+        run: echo "Push detected! CI is working."
