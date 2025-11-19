@@ -5,7 +5,7 @@ services:
     restart: unless-stopped
     build:
       context: .
-
+      #dockerfile: server.Dockerfile
     environment:
       # set database credentials
       DB_HOST: mysql
@@ -48,7 +48,6 @@ services:
     build:
       context: .
       dockerfile: test.Dockerfile
-    command: ["pytest", "-q"]
     links:
       # network connection with these services
       - app
